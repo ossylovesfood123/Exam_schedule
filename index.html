@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Study Schedule</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div id="header-left">
+            <h1>Exam Study Schedule</h1>
+            <nav>
+                <ul>
+                    <li><a href="#current-day">Current Day</a></li>
+                    <li><a href="#next-day-preview">Next Day Preview</a></li>
+                    <li><a href="#exam-countdowns">Exam Countdowns</a></li>
+                    <li><a href="#previous-day">Previous Day</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="header-right">
+            <div id="pomodoro">
+                <div id="timer">
+                    <span id="minutes">25</span>:<span id="seconds">00</span>
+                </div>
+                <button id="start-timer">Start</button>
+                <button id="reset-timer">Reset</button>
+            </div>
+            <div id="motivation">
+                <p id="quote"></p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="current-day">
+            <h2>Tasks for Today</h2>
+            <ul id="current-day-tasks"></ul>
+        </section>
+
+        <section id="next-day-preview">
+            <h2>Next Day Preview</h2>
+            <ul id="next-day-tasks"></ul>
+        </section>
+
+        <section id="previous-day">
+            <h2>Previous Day</h2>
+            <ul id="previous-day-tasks"></ul>
+        </section>
+
+        <section id="exam-countdowns">
+            <h2>Exam Countdowns</h2>
+            <div id="countdown-1"><i class="fas fa-clock"></i> NET3001- Real Time Systems: <span></span></div>
+            <div id="countdown-2"><i class="fas fa-clock"></i> NET3006- Network Management: <span></span></div>
+            <div id="countdown-3"><i class="fas fa-clock"></i> NET3010- Web Programming: <span></span></div>
+            <div id="countdown-4"><i class="fas fa-clock"></i> NET3011- Advanced Network Switching: <span></span></div>
+            <div id="countdown-5"><i class="fas fa-clock"></i> NET3012- IP Architecture & Solutions: <span></span></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Exam Study Schedule. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
